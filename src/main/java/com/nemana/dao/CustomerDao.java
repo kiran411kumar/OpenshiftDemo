@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface CustomerDao extends JpaRepository<Customer, Integer> {
 
-    public List<Customer> findAll();
+
 }

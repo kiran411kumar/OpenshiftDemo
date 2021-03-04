@@ -18,4 +18,10 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println("Inside get all customers");
         return customerDao.findAll();
     }
+
+    @Override
+    public void addCustomer(Customer customer) {
+        System.out.println("Inside add customer");
+        customerDao.save(customer);
+    }
 }

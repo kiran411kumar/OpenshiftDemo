@@ -7,9 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,5 +31,12 @@ public class CustomerController {
         List<Customer> customers = customerService.getAllCustomers();
         System.out.println("Returning list:-"+customers);
         return customers;
+    }
+
+    @PostMapping("/add")
+    public List<Customer> addCustomer(@RequestBody Customer customer) {
+        System.out.println("Inside add customer in controller");
+        customerService.addCustomer(customer);
+        return getCustomers();
     }
 }

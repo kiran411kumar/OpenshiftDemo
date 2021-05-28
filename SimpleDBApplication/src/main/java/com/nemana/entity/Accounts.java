@@ -1,14 +1,12 @@
-/*package com.nemana.entity;
-
-import lombok.Data;
-import lombok.ToString;
-
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+package com.nemana.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import lombok.Data;
+import lombok.ToString;
 
 @Data
 @Entity(name = "Accounts")
@@ -25,4 +23,4 @@ public class Accounts {
     private String state;
     private String postal;
     private String country;
-}*/
+}

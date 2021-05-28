@@ -1,4 +1,4 @@
-package com.nemana.entity;
+/*package com.nemana.entity;
 
 import lombok.Data;
 import lombok.ToString;
@@ -25,4 +25,4 @@ public class Accounts {
     private String state;
     private String postal;
     private String country;
-}
+}*/

@@ -12,13 +12,14 @@ import com.nemana.service.SimpleAppService;
 @Service
 public class SimpleAppServiceImpl implements SimpleAppService {
 	
-	@Autowired
-	private AccountsDao accountsDao;
+	/*@Autowired
+	private AccountsDao accountsDao;*/
 
 	@Override
 	public List<Accounts> getAllAccounts() {
 		// TODO Auto-generated method stub
-		return accountsDao.findAll();
+		//return accountsDao.findAll();
+		return null;
 	}
 
 }
